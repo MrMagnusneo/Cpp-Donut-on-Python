@@ -2,13 +2,17 @@ import os
 import math
 import time
 
+clear = 'clear'
+if os.name == 'nt':
+    clear = "cls"
+
 A = 0
 B = 0
 z = [0] * 1760
 b = [' '] * 1760
 
 while True:
-    os.system('clear')
+    os.system(clear)
     for k in range(1760):
         z[k] = 0
         b[k] = ' '
@@ -40,4 +44,3 @@ while True:
         A += 0.00004
         B += 0.00002
     time.sleep(0.03)
-
